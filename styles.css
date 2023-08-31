@@ -19,7 +19,100 @@
     background-color: rgb(255 255 255);
 
     grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.upper-container {
+    /* border: 2px solid green; */
+    /* background-color: lightgreen; */
+
+    display: flex;
+    flex: 1;
+
+    align-items: center;
+}
+
+.searchbar-container {
+
+    /* border: 2px solid black; */
+
+    display: flex;
+
+    flex: 2;
+
+}
+
+.searchbar-icon-container {
+    /* border: 2px solid gray; */
+
+    display: flex;
+
+    flex: 1;
+}
+
+.searchbar-icon {
+    /* border: 2px solid rgb(238, 0, 255); */
+
+    display: flex;
+    justify-content: flex-end;
+
+    flex: 1;
+}
+
+.searchbar-box {
+    /* border: 2px solid yellow; */
+
+    display: flex;
+    align-items: center;
+
+    flex: 15;
+}
+
+.searchbar-box input {
+    appearance: none;
+    border: 0px;
+    border-radius: 10px;
+    background-color: hsl(214.29deg 31.82% 91.37%);
+    line-height: 26px;
+
+    flex: 1;
+}
+
+.header-icons {
+    /* border: 2px solid black; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+}
+
+img.cbd-profile-pic {
+    /* border: 2px solid black; */
+
+    margin-left: 10px;
+    margin-right: 16px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.user-name-upper {
+    /* border: 2px solid black; */
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lower-container {
+    border: 2px solid purple;
+    background-color: lightpink;
+
+    flex: 1;
+}
+
+
 
 .sidebar {
     border: 2px solid blue;
@@ -108,7 +201,16 @@ svg {
 
     height: 20px;
     color: white;
-    margin-right: 16px;
+}
+
+.sidebar svg {
+    margin-right: 16px;    
+}
+
+.header svg {
+    color: rgb(15 15 15);
+    height: 22px;
+    margin-right: 8px;
 }
 
 .nav:hover,
