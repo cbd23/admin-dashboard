@@ -90,7 +90,7 @@
     flex: 1;
 }
 
-img.cbd-profile-pic {
+.user-icon-upper > img.cbd-profile-pic {
     /* border: 2px solid black; */
 
     margin-left: 10px;
@@ -106,10 +106,76 @@ img.cbd-profile-pic {
 }
 
 .lower-container {
-    border: 2px solid purple;
-    background-color: lightpink;
+    /* border: 2px solid purple; */
+    /* background-color: lightpink; */
+
+    display: flex;
 
     flex: 1;
+}
+
+.user-details {
+    /* border: 2px solid black; */
+    min-width: 400px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    flex: 2;
+}
+
+.user-photo > .cbd-profile-pic {
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 14px;
+}
+
+.user-details .user-name-lower {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    position: relative;
+    top: 6px;
+}
+
+span.hello::before {
+    position: relative;
+
+    font-size: 0.9rem;
+    content: "Hi there,";
+
+    top: -18px;
+    left: -225px;
+}
+
+.user-actions {
+    /* border: 2px solid rgb(208, 4, 219); */
+
+    display: flex;
+    flex: 1;
+
+    margin-right: 26px;
+}
+
+.user-actions .btn {
+    background-color: hsl(201.08deg 78.06% 46.47%);
+    color: white;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    height: 16px;
+    min-width: 60px;
+    border-radius: 28px;
+    margin: 12px;
+    padding: 12px;
+    text-align: center;
+
+    flex: 1;
+    cursor: pointer;
 }
 
 
@@ -211,6 +277,8 @@ svg {
     color: rgb(15 15 15);
     height: 22px;
     margin-right: 8px;
+
+    cursor: pointer;
 }
 
 .nav:hover,
