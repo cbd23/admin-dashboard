@@ -5,7 +5,7 @@
 }
 
 .main-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
 
     display: grid;
@@ -14,7 +14,7 @@
 }
 
 .header {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 
     background-color: rgb(255 255 255);
 
@@ -180,7 +180,7 @@ span.hello::before {
 
 
 .sidebar {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 
     background-color: rgb(26 146 211);
     color: white;
@@ -281,7 +281,7 @@ svg {
 
 
 .content {
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
 
     background-color: rgb(226 232 240);
 
@@ -375,15 +375,140 @@ div.title-holder::before {
 }
 
 
-
 .announcements {
-    background-color: coral;
-
+    /* background-color: coral; */
+    
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+}
+
+.news-container {
+    /* border: 2px solid rgb(0, 0, 0); */
+
+    background-color: hsl(0deg 0% 100%);
+    position: relative;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    margin-top: 54px;
+    margin-right: 20px;
+    margin-bottom: 54px;
+    margin-left: 0px;
+    
+    padding: 10px 20px;
+
+    flex: 1;
+}
+
+.news-container::before {
+    content: "Announcements";
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    position: relative;
+
+    top: -40px;
+    left: -5px;
+}
+
+.news-one,
+.news-two,
+.news-three {
+    border: 1px solid white;
+
+    padding: 10px;
+    flex: 1;
+}
+
+hr {
+    margin: 0px 10px;
+}
+
+.news-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.news-para {
+    font-size: 0.7rem;
 }
 
 .trending {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 
     grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+}
+
+.trending-people {
+    /* border: 2px solid rgb(184, 0, 0); */
+
+    background-color: hsl(0deg 0% 100%);
+    min-width: 200px;
+    position: relative;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 54px;
+    margin-left: 0px;
+    
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1;
+}
+
+.trending-people::before {
+    content: "Trending";
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    position: relative;
+
+    top: -40px;
+    left: -5px;
+}
+
+.trending-person-one,
+.trending-person-two,
+.trending-person-three,
+.trending-person-four {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+}
+
+.person-one-name,
+.person-two-name,
+.person-three-name,
+.person-four-name {
+    /* border: 1px solid blue; */
+
+    font-size: 0.8rem;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.trending-people img {
+    height: 40px;
+    border-radius: 50%;
 }
